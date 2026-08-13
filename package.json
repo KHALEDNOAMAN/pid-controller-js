@@ -1,0 +1,36 @@
+{
+  "name": "@khalednoaman/pid-controller",
+  "version": "1.0.0",
+  "description": "A comprehensive PID controller implementation in TypeScript with adaptive tuning and cascade control.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KHALEDNOAMAN/pid-controller-js.git"
+  },
+  "keywords": [
+    "pid",
+    "controller",
+    "robotics",
+    "iot",
+    "control-systems",
+    "automation",
+    "typescript"
+  ],
+  "author": "Khaled Noaman",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
