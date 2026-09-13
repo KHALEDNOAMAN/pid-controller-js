@@ -60,3 +60,21 @@ Check out the `/examples` directory for:
 - `setTunings(kp: number, ki: number, kd: number): void`
 - `setOutputLimits(min: number, max: number): void`
 - `getState(): PIDState`
+
+## Overview
+Lightweight PID controller library for JavaScript/TypeScript with auto-tuning and Kalman filtering
+
+## Architecture
+Core PID loop -> optional Kalman filter -> optional auto-tuner -> cascade support
+
+## Tech Stack
+TypeScript, Jest (testing)
+
+## How It Works
+PID computes error = setpoint - measurement, output = Kp*e + Ki*integral(e) + Kd*derivative(e)
+
+## Screenshots
+Example PID response plot (ASCII)
+
+## Future
+Web-based PID tuning simulator, more auto-tune methods, ROS integration
