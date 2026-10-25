@@ -1,4 +1,4 @@
-import { PIDController } from './index';
+import { PIDController } from './pid-controller';
 import { PIDConfig } from './types';
 
 export class AdaptivePIDController extends PIDController {

@@ -1,4 +1,4 @@
-import { PIDController } from './index';
+import { PIDController } from './pid-controller';
 
 export class CascadePID {
   public outerController: PIDController;

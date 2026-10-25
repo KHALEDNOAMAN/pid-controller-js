@@ -4,6 +4,11 @@
   "description": "A comprehensive PID controller implementation in TypeScript with adaptive tuning and cascade control.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",

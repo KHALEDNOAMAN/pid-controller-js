@@ -1,3 +1,19 @@
+/**
+ * First-order low-pass filter.
+ *
+ *     y = alpha * x + (1 - alpha) * y_prev
+ *
+ * `alpha` weights the NEW sample, which is the standard convention. So a
+ * SMALL alpha smooths more: 0.1 keeps 90% of the history each step, and 0.9
+ * barely filters at all. The first sample passes through unchanged rather
+ * than being pulled toward zero from a cold start.
+ *
+ * Documented explicitly because the two conventions are easy to swap and the
+ * package's own test asserted the other one, which is how a correct filter
+ * ended up looking broken.
+ *
+ * @param alpha smoothing factor in (0, 1]
+ */
 export class LowPassFilter {
   private alpha: number;
   private lastVal: number | null = null;
